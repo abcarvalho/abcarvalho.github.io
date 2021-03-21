@@ -268,6 +268,8 @@
   
   
   
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
 
   
     <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Artur Carvalho" />
@@ -303,7 +305,7 @@
     <meta property="twitter:image" content="https://abcarvalho.github.io/media/icon_hu6c1050ef90ea64237869bbb1dfe90cb5_2078066_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2020-09-01T00:00:00&#43;00:00" />
+      <meta property="og:updated_time" content="2030-06-01T13:00:00&#43;00:00" />
     
   
 
@@ -312,7 +314,13 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite","url": "https://abcarvalho.github.io/"
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://abcarvalho.github.io/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://abcarvalho.github.io/"
 }
 </script>
 
@@ -345,6 +353,43 @@
 
   
 
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
 
 
 
@@ -416,7 +461,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/media/abcarvalho_resume.pdf"><span>Resume</span></a>
+          <a class="nav-link " href="/uploads/abcarvalho_resume.pdf"><span>Resume</span></a>
         </li>
 
         
@@ -584,6 +629,10 @@
       
 
       
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
       
 
       
@@ -1062,7 +1111,7 @@
 
 
 
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/media/abcarvalho_thesis.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/uploads/abcarvalho_thesis.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -1107,7 +1156,7 @@
       
     
   
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/media/abcarvalho_online_app.pdf" >
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/uploads/abcarvalho_online_app.pdf" >
     
     Online Appendix
   </a>
@@ -1126,7 +1175,7 @@
       
     
   
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/media/abcarvalho_slides.pdf" >
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/uploads/abcarvalho_slides.pdf" >
     
     Slides
   </a>
@@ -1145,7 +1194,7 @@
       
     
   
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/media/abcarvalho_data.pdf" >
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/uploads/abcarvalho_data.pdf" >
     
     Data Analysis
   </a>
@@ -2003,6 +2052,23 @@
     
     
     
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
 
     
     
@@ -2016,6 +2082,14 @@
 
     
     
+      
+      
+      
+      
+      
+      
+      
+    
 
     
     
@@ -2025,8 +2099,11 @@
     
     
     
+      
+      
     
-    <script src="/en/js/wowchemy.min.a94e2b666e233f67b55ae8de46781f71.js"></script>
+    
+    <script src="/en/js/wowchemy.min.86436b7755ae5d1e475b75af56830477.js"></script>
 
     
 
